@@ -1,0 +1,473 @@
+body{
+    margin: 0px;
+    background-color: white;
+    font-family: 'Fira Sans', Arial, sans-serif;
+}
+h1, h2, h3, h4{
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    display: flex;
+    padding: 2rem;
+    justify-content: space-between;
+}
+.navegacao {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-right: 1rem;
+    flex-wrap: wrap;
+}
+.navegacao a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.10rem;
+    padding: 1rem;
+}
+.navegacao li{
+    list-style-type: none;
+    margin: 0px;
+}
+
+/*INTRODUÇÃO */
+
+.introducao{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+    position: relative;
+    
+}
+.introducao img{
+    max-width: 90%;
+    height: 100%;
+    object-fit: cover;
+}
+.introducao p{
+    font-size: 1.4rem;
+}
+.introducao h1{
+    font-size: 4.5rem;
+    line-height: 80px;
+    
+}
+.introducao h1::before{
+    content: "";
+    width: 200px;
+    height: 200px;
+    background-image: url(./img/detalhe.svg);
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    top: 155px;
+    left: 500px;
+    z-index: -1;
+}
+
+
+/* EXPERIENCIA */
+.experiencia{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 2rem;
+    gap: 3rem;
+}
+.experiencia h2{
+    font-size: 7rem;
+    color: #e0e0e0;
+    letter-spacing: -3px;
+    line-height: 1;
+    word-break: break-all;
+    max-width: 4ch;
+    text-transform: uppercase;
+    
+}
+.experiencia .exp-item{
+    background-color: #f5f5f5;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+    gap: 1rem;
+    border-radius: 3px;
+    position: relative;
+}
+.experiencia .exp-item:not(:first-child){
+    margin-top: 1.5rem;
+}
+.exp-item:last-child{
+    margin-top: 30px;
+}
+.exp-item p{
+    font-size: 1.06rem;
+    color: #525252;
+}
+.exp-item h3{
+    font-size: 1rem;
+}
+.exp-item span{
+    background-color: white;
+    padding: 0.30rem;
+    font-size: 0.2;
+}
+.experiencia .descricao{
+    font-size: 1.5rem;
+}
+
+.exp-item .tags-span{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    border-radius: 0.25rem;
+    margin-top: 1rem;
+}
+.exp-item h3::before{
+    content: "";
+    height: 19px;
+    width: 4px;
+    background: linear-gradient(180deg, #b6f829 0%, #67DD0A);
+    display: inline-block;
+    position: absolute;
+    left: -2px;
+    top: 20px;
+}
+
+.experiencia strong{
+    color:#000000;
+}
+.experiencia .ano{
+    position: absolute;
+    top: 5px;
+    left: -50px;
+    font-size: 1rem;
+}
+.experiencia .ano1{
+    position: absolute;
+    top: 5px;
+    left: -70px;
+    font-size: 1rem;
+}
+
+
+
+
+/*FORMACAO*/
+.formacao{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: #141414;
+    color: #ffff;
+    padding: 2rem;
+    gap: 2.7rem;
+    position: relative;
+}
+.formacao h2{
+    font-size: 7rem;
+    color: #000000;
+    letter-spacing: -3px;
+    line-height: 1;
+    word-break: break-all;
+    max-width: 5ch;
+    text-transform: uppercase;
+}
+.formacao .form-descricao{
+    width: 40ch;
+    font-size: 1.5rem;
+    color: #a3a3a3
+}
+.form-cursos{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.formacao strong{
+    color: #ffffff;
+}
+.faculdade-curso{
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    width: 180px;
+    height: 130px;
+    padding: 1rem 1rem 0.5rem 1rem;
+    position: relative;  
+}
+
+.faculdade-curso span{
+    color: #a3a3a3;
+    font-size: 0.9rem;
+}
+.faculdade-curso h4::before{
+    content: "";
+    height: 19px;
+    width: 4px;
+    background: linear-gradient(180deg, #b6f829 0%, #67DD0A);
+    display: inline-block;
+    position: absolute;
+    left: -2px;
+    top: 53px;
+}
+.cursos{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    margin-top: 2rem;
+    gap: 0rem 1rem;
+    grid-template-rows: auto 2.1875rem 3rem auto 2.1875rem 2.1875rem;
+}
+.cursos img{
+    grid-column: 1;
+    align-self: center;
+}
+.cursos div, .cursos p{
+    grid-column: 2/3;
+    color: #ffffff;
+}
+.cursos .cursos-horas{
+    grid-column: 3/4;
+    color: #a3a3a3;
+}
+.cursos .cursos-subtitulo{
+    color: #a3a3a3;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+.cursos span, .instituicao{
+    color: #a3a3a3;
+}
+
+.formacao::after{
+    content: "";
+    height: 120px;
+    background-image: url(./img/detalhe.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    display: block;
+    position: relative;
+    bottom: -90px;
+    z-index: 1;
+}
+
+
+
+
+/*RODAPE*/
+.rodape{
+    background-color: #000000;
+    color: #cccccc;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3rem 2rem;
+    position: relative;
+    align-items: flex-start;
+}
+.rodape, .fim {
+   color: #8f8f8f;
+}
+.rodape .contatos{
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+.rodape .rodape-detalhe{
+    font-size: 1.5rem;
+    width: 40ch;
+    align-self: center;
+}
+
+/*RESPONSIVIDADE */
+
+/*HEADER E INTRODUCAO*/
+
+
+/*EXPERIENCIA*/
+
+@media (max-width: 1000px) and (min-width: 800px) {
+    .experiencia h2{
+        font-size: 6rem;
+    }
+    .formacao h2{
+        font-size: 6rem;
+    }
+    .rodape .contatos{
+        font-size: 2rem;
+    }
+    .rodape {
+        gap: 1rem;
+    }
+    .rodape .contatos{
+        font-size: 1.5rem;
+    }
+    .introducao h1::before{
+        left: 330px;
+        top: 50px;
+    }
+}
+
+@media (max-width: 800px){
+    .introducao h1{
+        font-size: 3.5rem;
+        line-height: 70px;
+    }
+    .introducao p{
+        font-size: 1.2rem;
+    }
+    .experiencia h2{
+        font-size: 4rem;
+        word-break: normal;
+        max-width: 100%;
+        color:#000000;
+        text-transform: capitalize;
+    }
+    .experiencia {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .formacao{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .formacao h2{
+        font-size: 4rem;
+        word-break: normal;
+        max-width: 100%;
+        text-transform: capitalize;
+        color:#ffffff;
+    }
+    .rodape{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .rodape .contatos{
+        font-size: 1.5rem;
+    }
+    .introducao h1::before{
+        top: 20px;
+        left: 255px;
+    }
+    .exp-item h3::before{
+        display: none;
+    }
+    .experiencia .ano{
+        position: static;
+
+    }
+    .experiencia .ano1{
+        position: static;
+    }
+}
+@media (max-width: 700px){
+    .introducao h1{
+        font-size: 3rem;
+        line-height: 60px;
+    }
+    header{
+        padding: 1rem;
+    }
+    .navegacao li{
+        background-color: #f5f5f5;
+        padding: 0.5rem 0.5rem;
+        border-radius: 3px;
+    }
+    .navegacao{
+        gap: 1rem;
+    }
+   
+}
+
+@media (max-width: 400px) or (max-width: 575px){
+    header{
+        flex-direction: column;
+        padding: 1rem;
+    }
+    header img{
+        max-width: 150px;
+        align-self: center;
+    }
+    .navegacao {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+    .introducao{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .introducao h1{
+        font-size: 2.5rem;
+        line-height: 3.125rem;
+        text-align: center;
+    }
+    .introducao p{
+        font-size: 1rem;
+        text-align: center;
+    }
+    .introducao img{
+        max-width: 150px;
+        justify-self: center;
+    }
+    .introducao h1::before{
+        display: none;
+    }
+    .experiencia h2{
+        font-size: 2.5rem;
+    }
+    .experiencia .descricao{
+        font-size: 1.4rem;
+    }
+    .experiencia .exp-item{
+        grid-template-columns: 1fr;
+    }
+    .formacao, .rodape, .introducao, .experiencia{
+        padding: 1rem;
+    }
+    .formacao h2{
+        font-size: 2.5rem;
+    }
+    .formacao .form-descricao{
+        font-size: 1.5rem;
+        width: 25ch;
+    }
+    .form-cursos{
+        flex-direction: column;
+        align-items: center;
+    }
+    .formacao::after{
+        display: none;
+    }
+    .rodape .rodape-detalhe{
+        font-size: 1.5rem;
+        width: 25ch;
+    }
+}
+@media (max-width: 300px){
+    .formacao .form-descricao{
+        font-size: 1rem;
+    }
+    .rodape .rodape-detalhe{
+        font-size: 1rem;
+    }
+    .contatos p{
+        font-size: 1rem;
+    }
+    .experiencia .descricao{
+        font-size: 1rem;
+    }
+    .introducao h1{
+        font-size: 2rem;
+        line-height: 2.3rem;
+    }
+    .experiencia h2{
+        font-size: 2.2rem;
+    }
+    .formacao h2{
+        font-size: 2.2rem;
+    }
+    .formacao .cursos{
+        margin-bottom: 1rem;
+    }
+}
