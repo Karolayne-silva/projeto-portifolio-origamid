@@ -1,6 +1,9 @@
 # Projeto Portifólio - Origamid
 
-![Vídeo melhor usa esse - Made with Clipchamp](https://github.com/Karolayne-silva/projeto-portifolio-origamid/assets/96891482/bdd522fb-f523-411d-a9eb-a8caa31b2921)
+
+
+https://github.com/Karolayne-silva/projeto-portifolio-origamid/assets/96891482/aab56f0a-d146-4cd4-840a-f8ba5de7fab5
+
 
 
 ## Descrição
